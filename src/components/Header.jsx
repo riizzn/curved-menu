@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Nav from "./Nav";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
           ></div>
         </div>
       </div>
+     <Nav isActive={isActive}/>
     </header>
   );
 }
